@@ -1,4 +1,13 @@
 {
+  "name": "pairingcode",
+  "version": "1.8.1",
+  "description": "pairingcode latest multi device whatsapp bot",
+  "main": "start.js",
+  "scripts": {
+    "start": "pm2 start start.js --deep-monitoring --attach --name Ethix-MD",
+    "stop": "pm2 stop Ethix-MD",
+    "restart": "pm2 restart Ethix-MD"
+  },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.13",
     "axios": "^1.7.9",
